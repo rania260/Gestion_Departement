@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Gestion Etudiants</title>
+<script type="text/javascript"></script>
+</head>
+<body>
+    <table>
+        <tr th:each="etudiant : ${etudiant}">
+            <td th:text="${etudiant.id}">ID</td>
+            <td th:text="${etudiant.name}">Name</td>
+            <td th:text="${etudiant.Prenom}">Prenom</td>
+            <td th:text="${etudiant.age}">Age</td>
+            <td th:text="${etudiant.Matricule}">Matricule</td>
+            <td th:text="${etudiant.Niveau}">Niveau</td>
+        </tr>
+    </table>
+</body>
+</html>
